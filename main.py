@@ -20,11 +20,11 @@ monthly_payment = (
     loan_amount
     * (monthly_interest_rate * (1 + monthly_interest_rate) ** number_of_payments)
     / ((1 + monthly_interest_rate) ** number_of_payments - 1)
-)*41
+)
 
 # Display the repayments.
-total_payments = monthly_payment * number_of_payments*41
-total_interest = (total_payments - loan_amount)*41
+total_payments = monthly_payment * number_of_payments
+total_interest = (total_payments - loan_amount)
 
 st.write("### Repayments")
 col1, col2, col3 = st.columns(3)
